@@ -1,1226 +1,662 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  <meta charset="utf-8" />
 
-  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <meta
-    content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    name="viewport"
-  />
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Homepage | ABDELAZIZ</title>
+  <title>iPortfolio Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-  <meta property="og:title" content="Homepage | ABDELAZIZ" />
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <meta property="og:locale" content="en_US" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <link rel="icon" type="image/png" href="/assets/img/azizelogolink.jpg" />
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <meta name="theme-color" content="#5540af" />
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-  <meta property="og:site_name" content="ABDELAZIZ" />
-
-  <meta property="og:image" content="//assets/img/social.jpg" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <meta name="twitter:site" content="@tailwindmade" />
-
-  <link
-   
-    href="https://fonts.gstatic.com"
-    rel="preconnect"
-  />
-
-  <link
-    as="style"
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
-    rel="preload"
-  />
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
-
-  <link
-    href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-    rel="stylesheet"
-  />
-
-  <link
-   
-    href="/assets/styles/main.min.css"
- 
-    rel="stylesheet"
-  />
-  
-  <script
-    defer
-    src="https://unpkg.com/@alpine-collective/toolkit@1.0.0/dist/cdn.min.js"
-  ></script>
-
-  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
-  
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
+<body>
 
-  <body
-    :class="{ 'overflow-hidden max-h-screen': mobileMenu }"
-    class="relative"
-    x-data="{ mobileMenu: false }"
-  >
-    
-    <div id="main" class="relative">
-      <div
-  x-data="{
-    triggerNavItem(id) {
-        $scroll(id)
-    },
-    triggerMobileNavItem(id) {
-        mobileMenu = false;
-        this.triggerNavItem(id)
-    }
-}"
->
-  <div class="w-full z-50 top-0 py-3 sm:py-5  absolute
-  ">
-  <div class="container flex items-center justify-between">
-    <div>
-      <a href="/">
-        <img  src="/assets/img/azizweblogo.png" class="w-24 rounded-full  lg:w-40" alt="logo image" />
-      </a>
-    </div>
-    <div class="hidden lg:block">
-      <ul class="flex items-center">
-        
-        <li class="group pl-6">
-          
-          <span
-            @click="triggerNavItem('#about')"
-            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-            >About</span
-          >
-          
-          <span
-            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
-          ></span>
-        </li>
-        
-        <li class="group pl-6">
-          
-          <span
-            @click="triggerNavItem('#services')"
-            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-            >Services</span
-          >
-          
-          <span
-            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
-          ></span>
-        </li>
-        
-        <li class="group pl-6">
-          
-          <span
-            @click="triggerNavItem('#portfolio')"
-            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-            >Portfolio</span
-          >
-          
-          <span
-            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
-          ></span>
-        </li>
-        
-        <li class="group pl-6">
-          
-          <span
-            @click="triggerNavItem('#clients')"
-            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-            >Clients</span
-          >
-          
-          <span
-            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
-          ></span>
-        </li>
-        
-        <li class="group pl-6">
-          
-          <span
-            @click="triggerNavItem('#work')"
-            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-            >Work</span
-          >
-          
-          <span
-            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
-          ></span>
-        </li>
-        
-        <li class="group pl-6">
-          
-          <span
-            @click="triggerNavItem('#statistics')"
-            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-            >Statistics</span
-          >
-          
-          <span
-            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
-          ></span>
-        </li>
-        
-        <li class="group pl-6">
-          
-          <span
-            @click="triggerNavItem('#blog')"
-            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-            >Blog</span
-          >
-          
-          <span
-            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
-          ></span>
-        </li>
-        
-        <li class="group pl-6">
-          
-          <span
-            @click="triggerNavItem('#contact')"
-            class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-            >Contact</span
-          >
-          
-          <span
-            class="block h-0.5 w-full bg-transparent group-hover:bg-yellow"
-          ></span>
-        </li>
-        
-      </ul>
-    </div>
-    <div class="block lg:hidden">
-      <button @click="mobileMenu = true">
-        <i class="bx bx-menu text-4xl text-white"></i>
-      </button>
-    </div>
-  </div>
-</div>
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
-<div
-  class="pointer-events-none fixed inset-0 z-70 min-h-screen bg-black bg-opacity-70 opacity-0 transition-opacity lg:hidden"
-  :class="{ 'opacity-100 pointer-events-auto': mobileMenu }"
->
-  <div
-    class="absolute right-0 min-h-screen w-2/3 bg-primary py-4 px-8 shadow md:w-1/3"
-  >
-    <button
-      class="absolute top-0 right-0 mt-4 mr-4"
-      @click="mobileMenu = false"
-    >
-      <img src="/assets/img/icon-close.svg" class="h-10 w-auto" alt="" />
-    </button>
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
 
-    <ul class="mt-8 flex flex-col">
-      
-      <li class="py-2">
-        
-        <span
-          @click="triggerMobileNavItem('#about')"
-          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-          >About</span
-        >
-        
-      </li>
-      
-      <li class="py-2">
-        
-        <span
-          @click="triggerMobileNavItem('#services')"
-          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-          >Services</span
-        >
-        
-      </li>
-      
-      <li class="py-2">
-        
-        <span
-          @click="triggerMobileNavItem('#portfolio')"
-          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-          >Portfolio</span
-        >
-        
-      </li>
-      
-      <li class="py-2">
-        
-        <span
-          @click="triggerMobileNavItem('#clients')"
-          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-          >Clients</span
-        >
-        
-      </li>
-      
-      <li class="py-2">
-        
-        <span
-          @click="triggerMobileNavItem('#work')"
-          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-          >Work</span
-        >
-        
-      </li>
-      
-      <li class="py-2">
-        
-        <span
-          @click="triggerMobileNavItem('#statistics')"
-          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-          >Statistics</span
-        >
-        
-      </li>
-      
-      <li class="py-2">
-        
-        <span
-          @click="triggerMobileNavItem('#blog')"
-          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-          >Blog</span
-        >
-        
-      </li>
-      
-      <li class="py-2">
-        
-        <span
-          @click="triggerMobileNavItem('#contact')"
-          class="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-          >Contact</span
-        >
-        
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-
-      <div><div
-  class="relative bg-cover bg-center bg-no-repeat py-8"
-  style="background-image: url(/assets/img/bg-hero.jpg)"
->
-  <div
-    class="absolute inset-0 z-20 bg-gradient-to-r from-hero-gradient-from to-hero-gradient-to bg-cover bg-center bg-no-repeat"
-  ></div>
-
-  <div
-    class="container relative z-30 pt-20 pb-12 sm:pt-56 sm:pb-48 lg:pt-64 lg:pb-48"
-  >
-    <div class="flex flex-col items-center justify-center lg:flex-row">
-      <div class="rounded-full border-8 border-primary shadow-xl">
-        <img
-          src="/assets/img/azize_picture.jpg"
-          class="h-48 rounded-full sm:h-56"
-          alt="author"
-        />
-      </div>
-      <div class="pt-8 sm:pt-10 lg:pl-8 lg:pt-0">
-        <div
-          class="text-center flex flex-col justify-center items-center font-header text-4xl   sm:text-5xl md:text-6xl"
-        >
-        <span class="text-white p-2 "> Hello I'm </span> <span class=" underline decoration-sky-500" >ABDELAZIZ@ELHATHOUT</span>
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Alex Smith</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
-        <div
-          class="flex flex-col justify-center pt-3 sm:flex-row sm:pt-5 lg:justify-start"
-        >
-          <div
-            class="flex items-center justify-center pl-0 sm:justify-start md:pl-1"
-          >
-            <p class="font-body text-lg uppercase text-white">Let's connect</p>
-            <div class="hidden sm:block">
-              <i class="bx bx-chevron-right text-3xl text-yellow"></i>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Alex Smith</h1>
+      <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>UI/UX Designer &amp; Web Developer.</h3>
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+123 456 7890</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>New York, USA</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>PhEmailone:</strong> <span>email@example.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
+              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <section id="facts" class="facts">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Facts</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Happy Clients</strong> consequuntur quae</p>
             </div>
           </div>
-          <div
-            class="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0"
-          >
-            <a href="https://www.facebook.com/abdelaazize.elhathoute/">
-              <i
-                class="bx bxl-facebook-square text-2xl text-white hover:text-yellow"
-              ></i>
-            </a>
-            <a href="/" class="pl-4">
-              <i
-                class="bx bxl-twitter text-2xl text-white hover:text-yellow"
-              ></i>
-            </a>
-            <a href="/" class="pl-4">
-              <i
-                class="bx bxl-dribbble text-2xl text-white hover:text-yellow"
-              ></i>
-            </a>
-            <a href="https://www.linkedin.com/in/elhathout-abdelaziz-191290208/" class="pl-4">
-              <i
-                class="bx bxl-linkedin text-2xl text-white hover:text-yellow"
-              ></i>
-            </a>
-            <a href="https://www.instagram.com/elhathout_abdelaziz98/" class="pl-4">
-              <i
-                class="bx bxl-instagram text-2xl text-white hover:text-yellow"
-              ></i>
-            </a>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects</strong> adipisci atque cum quia aut</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="count-box">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Facts Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">PHP <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">WordPress/CMS <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Photoshop <i class="val">55%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Sumary</h3>
+            <div class="resume-item pb-0">
+              <h4>Alex Smith</h4>
+              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
+              <ul>
+                <li>Portland par 127,Orlando, FL</li>
+                <li>(123) 456-7891</li>
+                <li>alice.barkley@example.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Master of Fine Arts &amp; Graphic Design</h4>
+              <h5>2015 - 2016</h5>
+              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
+              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+            </div>
+            <div class="resume-item">
+              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
+              <h5>2010 - 2014</h5>
+              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
+              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Senior graphic design specialist</h4>
+              <h5>2019 - Present</h5>
+              <p><em>Experion, New York, NY </em></p>
+              <ul>
+                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
+                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
+                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
+                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Graphic design specialist</h4>
+              <h5>2017 - 2018</h5>
+              <p><em>Stepping Stone Advertising, New York, NY</em></p>
+              <ul>
+                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
+                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
+                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
+                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div class="bg-grey-50" id="about">
-  <div class="container flex flex-col items-center py-16 md:py-20 lg:flex-row">
-    <div class="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
-      <h2
-        class="font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
-      >
-        Who am I?
-      </h2>
-      <h4
-        class="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
-      >
-        I'm <strong class="underline decoration-sky-500">ELHATHOUT ABDELAZIZ</strong> , a Full Stack Developer
-      </h4>
-      <p class="pt-6 border border-t-2 border-b-2 border-dashed border-red-500 font-body leading-relaxed text-grey-100">
-       ☯🐤  𝑱❜𝒂𝒊 𝒅𝒆́𝒋𝒂̀ 𝒕𝒓𝒂𝒗𝒂𝒊𝒍𝒍𝒆́ 𝒂𝒗𝒆𝒄 𝒅𝒆𝒔 𝒕𝒆𝒄𝒉𝒏𝒐𝒍𝒐𝒈𝒊𝒆𝒔 𝒕𝒆𝒍𝒍𝒆𝒔 𝒒𝒖𝒆 𝑱𝒂𝒗𝒂𝑺𝒄𝒓𝒊𝒑𝒕, 𝑱𝑸𝑼𝑬𝑹𝒀,𝑨𝑱𝑨𝑿,𝑮𝑰𝑻,𝑻𝒂𝒊𝒍𝒘𝒊𝒏𝒅, 𝑩𝒐𝒐𝒕𝒔𝒕𝒓𝒂𝒑,𝑰𝑷𝑨, 𝑷𝑯𝑷, 𝑳𝒂𝒓𝒂𝒗𝒆𝒍, 𝑱𝒊𝒓𝒂 𝒆𝒕 𝑺𝒄𝒓𝒖𝒎,𝑷𝑶𝑺𝑻𝑴𝑨𝑵,𝑼𝑴𝑳 𝒆𝒕 𝒋❜𝒂𝒊 𝒖𝒏𝒆 𝒄𝒆𝒓𝒕𝒂𝒊𝒏𝒆 𝒆𝒙𝒑𝒆́𝒓𝒊𝒆𝒏𝒄𝒆 𝒆𝒏 𝒅𝒆́𝒗𝒆𝒍𝒐𝒑𝒑𝒆𝒎𝒆𝒏𝒕 𝒘𝒆𝒃. 𝑱𝒆 𝒔𝒖𝒊𝒔 𝒉𝒖𝒎𝒃𝒍𝒆,𝒔𝒆́𝒓𝒊𝒆𝒖𝒙,  💚🎀
-      </p>
-      <div
-        class="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start"
-      >
-        <div class="flex items-center justify-center sm:justify-start">
-          <p class="font-body text-lg font-semibold uppercase text-grey-20">
-            Connect with me
-          </p>
-          <div class="hidden sm:block">
-            <i class="bx bx-chevron-right text-2xl text-primary"></i>
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
           </div>
         </div>
-        <div
-          class="flex items-center justify-center pt-5 pl-2 sm:justify-start sm:pt-0"
-        >
-          <a href="https://www.facebook.com/abdelaazize.elhathoute/">
-            <i
-              class="bx bxl-facebook-square text-2xl text-primary hover:text-yellow"
-            ></i>
-          </a>
-          <a href="/" class="pl-4">
-            <i
-              class="bx bxl-twitter text-2xl text-primary hover:text-yellow"
-            ></i>
-          </a>
-          <a href="/" class="pl-4">
-            <i
-              class="bx bxl-dribbble text-2xl text-primary hover:text-yellow"
-            ></i>
-          </a>
-          <a href="https://www.linkedin.com/in/elhathout-abdelaziz-191290208/" class="pl-4">
-            <i
-              class="bx bxl-linkedin text-2xl text-primary hover:text-yellow"
-            ></i>
-          </a>
-          <a href="https://www.instagram.com/elhathout_abdelaziz98/" class="pl-4">
-            <i
-              class="bx bxl-instagram text-2xl text-primary hover:text-yellow"
-            ></i>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="w-full pl-0 pt-10 sm:w-3/4 lg:w-2/5 lg:pl-12 lg:pt-0">
-      <div>
-        <div class="flex items-end justify-between">
-          <h4 class="font-body font-semibold uppercase text-black">
-            HTML & CSS(Tailwind-Bootstrap)
-          </h4>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-html" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5Zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662H6.515Zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999h.706Zm4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z"/>
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-css" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.397 14.841a1.13 1.13 0 0 0 .401.823c.13.108.289.192.478.252.19.061.411.091.665.091.338 0 .624-.053.859-.158.236-.105.416-.252.539-.44.125-.189.187-.408.187-.656 0-.224-.045-.41-.134-.56a1.001 1.001 0 0 0-.375-.357 2.027 2.027 0 0 0-.566-.21l-.621-.144a.97.97 0 0 1-.404-.176.37.37 0 0 1-.144-.299c0-.156.062-.284.185-.384.125-.101.296-.152.512-.152.143 0 .266.023.37.068a.624.624 0 0 1 .246.181.56.56 0 0 1 .12.258h.75a1.092 1.092 0 0 0-.2-.566 1.21 1.21 0 0 0-.5-.41 1.813 1.813 0 0 0-.78-.152c-.293 0-.551.05-.776.15-.225.099-.4.24-.527.421-.127.182-.19.395-.19.639 0 .201.04.376.122.524.082.149.2.27.352.367.152.095.332.167.539.213l.618.144c.207.049.361.113.463.193a.387.387 0 0 1 .152.326.505.505 0 0 1-.085.29.559.559 0 0 1-.255.193c-.111.047-.249.07-.413.07-.117 0-.223-.013-.32-.04a.838.838 0 0 1-.248-.115.578.578 0 0 1-.255-.384h-.765ZM.806 13.693c0-.248.034-.46.102-.633a.868.868 0 0 1 .302-.399.814.814 0 0 1 .475-.137c.15 0 .283.032.398.097a.7.7 0 0 1 .272.26.85.85 0 0 1 .12.381h.765v-.072a1.33 1.33 0 0 0-.466-.964 1.441 1.441 0 0 0-.489-.272 1.838 1.838 0 0 0-.606-.097c-.356 0-.66.074-.911.223-.25.148-.44.359-.572.632-.13.274-.196.6-.196.979v.498c0 .379.064.704.193.976.131.271.322.48.572.626.25.145.554.217.914.217.293 0 .554-.055.785-.164.23-.11.414-.26.55-.454a1.27 1.27 0 0 0 .226-.674v-.076h-.764a.799.799 0 0 1-.118.363.7.7 0 0 1-.272.25.874.874 0 0 1-.401.087.845.845 0 0 1-.478-.132.833.833 0 0 1-.299-.392 1.699 1.699 0 0 1-.102-.627v-.495ZM6.78 15.29a1.176 1.176 0 0 1-.111-.449h.764a.578.578 0 0 0 .255.384c.07.049.154.087.25.114.095.028.201.041.319.041.164 0 .301-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.256-.144-.463-.193l-.618-.143a1.72 1.72 0 0 1-.539-.214 1 1 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.527-.422.225-.1.484-.149.777-.149.304 0 .564.05.779.152.217.102.384.239.5.41.12.17.187.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.246-.181.923.923 0 0 0-.37-.068c-.216 0-.387.05-.512.152a.472.472 0 0 0-.184.384c0 .121.047.22.143.3a.97.97 0 0 0 .404.175l.621.143c.217.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Z"/>
-          </svg>
-          <h3 class="font-body text-3xl font-bold text-primary">80%</h3>
-        </div>
-        <div class="mt-2 h-3 w-full rounded-full bg-lila">
-          <div class="h-3 rounded-full bg-primary" style="width: 80%"></div>
-        </div>
-      </div>
-      <div class="pt-6">
-        <div class="flex items-end justify-between">
-          <h4 class="font-body font-semibold uppercase text-black">PHP(Laravel)</h4>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-php" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM1.6 11.85H0v3.999h.791v-1.342h.803c.287 0 .531-.057.732-.173.203-.117.358-.275.463-.474a1.42 1.42 0 0 0 .161-.677c0-.25-.053-.476-.158-.677a1.176 1.176 0 0 0-.46-.477c-.2-.12-.443-.179-.732-.179Zm.545 1.333a.795.795 0 0 1-.085.38.574.574 0 0 1-.238.241.794.794 0 0 1-.375.082H.788V12.48h.66c.218 0 .389.06.512.181.123.122.185.295.185.522Zm4.48 2.666V11.85h-.79v1.626H4.153V11.85h-.79v3.999h.79v-1.714h1.682v1.714h.79Zm.703-3.999h1.6c.288 0 .533.06.732.179.2.117.354.276.46.477.105.201.158.427.158.677 0 .25-.054.476-.161.677-.106.199-.26.357-.463.474a1.452 1.452 0 0 1-.733.173H8.12v1.342h-.791V11.85Zm2.06 1.714a.795.795 0 0 0 .084-.381c0-.227-.061-.4-.184-.521-.123-.122-.294-.182-.513-.182h-.66v1.406h.66a.794.794 0 0 0 .375-.082.574.574 0 0 0 .237-.24Z"/>
-          </svg>
-          <h3 class="font-body text-3xl font-bold text-primary">70%</h3>
-        </div>
-        <div class="mt-2 h-3 w-full rounded-full bg-lila">
-          <div class="h-3 rounded-full bg-primary" style="width: 70%"></div>
-        </div>
-      </div>
-      <div class="pt-6">
-        <div class="flex items-end justify-between">
-          <h4 class="font-body font-semibold uppercase text-black">
-            Javascript(VueJs)
-          </h4>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-js" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H8v-1h4a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.186 15.29a1.176 1.176 0 0 1-.111-.449h.765a.578.578 0 0 0 .255.384c.07.049.153.087.249.114.095.028.202.041.319.041.164 0 .302-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.255-.144-.462-.193l-.619-.143a1.72 1.72 0 0 1-.539-.214 1.001 1.001 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.528-.422.224-.1.483-.149.776-.149.305 0 .564.05.78.152.216.102.383.239.5.41.12.17.186.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.247-.181.923.923 0 0 0-.369-.068c-.217 0-.388.05-.513.152a.472.472 0 0 0-.184.384c0 .121.048.22.143.3a.97.97 0 0 0 .405.175l.62.143c.218.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Zm-3.104-.033A1.32 1.32 0 0 1 0 14.791h.765a.576.576 0 0 0 .073.27.499.499 0 0 0 .454.246c.19 0 .33-.055.422-.164.092-.11.138-.265.138-.466v-2.745h.79v2.725c0 .44-.119.774-.357 1.005-.236.23-.564.345-.984.345a1.59 1.59 0 0 1-.569-.094 1.145 1.145 0 0 1-.407-.266 1.14 1.14 0 0 1-.243-.39Z"/>
-          </svg>
-          <h3 class="font-body text-3xl font-bold text-primary">60%</h3>
-        </div>
-        <div class="mt-2 h-3 w-full rounded-full bg-lila">
-          <div class="h-3 rounded-full bg-primary" style="width: 60%"></div>
-        </div>
-      </div>
-      <div class="pt-6">
-        <div class="flex items-end justify-between">
-          <h4 class="font-body font-semibold uppercase text-black">UML</h4>
-          <h3 class="font-body text-3xl font-bold text-primary">80%</h3>
-        </div>
-        <div class="mt-2 h-3 w-full rounded-full bg-lila">
-          <div class="h-3 rounded-full bg-primary" style="width: 80%"></div>
-        </div>
-      </div>
 
-      <div class="pt-6">
-        <div class="flex items-end justify-between">
-          <h4 class="font-body font-semibold uppercase text-black">Git/Github</h4>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-          </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-git" viewBox="0 0 16 16">
-            <path d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.031 1.031 0 0 0 0-1.457"/>
-          </svg>
-          <h3 class="font-body text-3xl font-bold text-primary">65%</h3>
-        </div>
-        <div class="mt-2 h-3 w-full rounded-full bg-lila">
-          <div class="h-3 rounded-full bg-primary" style="width: 65%"></div>
-        </div>
-      </div>
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
-      <div class="pt-6">
-        <div class="flex items-end justify-between">
-          <h4 class="font-body font-semibold uppercase text-black">Wordpress</h4>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wordpress" viewBox="0 0 16 16">
-            <path d="M12.633 7.653c0-.848-.305-1.435-.566-1.892l-.08-.13c-.317-.51-.594-.958-.594-1.48 0-.63.478-1.218 1.152-1.218.02 0 .039.002.058.003l.031.003A6.838 6.838 0 0 0 8 1.137 6.855 6.855 0 0 0 2.266 4.23c.16.005.313.009.442.009.717 0 1.828-.087 1.828-.087.37-.022.414.521.044.565 0 0-.371.044-.785.065l2.5 7.434 1.5-4.506-1.07-2.929c-.369-.022-.719-.065-.719-.065-.37-.022-.326-.588.043-.566 0 0 1.134.087 1.808.087.718 0 1.83-.087 1.83-.087.37-.022.413.522.043.566 0 0-.372.043-.785.065l2.48 7.377.684-2.287.054-.173c.27-.86.469-1.495.469-2.046zM1.137 8a6.864 6.864 0 0 0 3.868 6.176L1.73 5.206A6.837 6.837 0 0 0 1.137 8z"/>
-            <path d="M6.061 14.583 8.121 8.6l2.109 5.78c.014.033.03.064.049.094a6.854 6.854 0 0 1-4.218.109zm7.96-9.876c.03.219.047.453.047.706 0 .696-.13 1.479-.522 2.458l-2.096 6.06a6.86 6.86 0 0 0 2.572-9.224z"/>
-            <path fill-rule="evenodd" d="M0 8c0-4.411 3.589-8 8-8 4.41 0 8 3.589 8 8s-3.59 8-8 8c-4.411 0-8-3.589-8-8zm.367 0c0 4.209 3.424 7.633 7.633 7.633 4.208 0 7.632-3.424 7.632-7.633C15.632 3.79 12.208.367 8 .367 3.79.367.367 3.79.367 8z"/>
-          </svg>
-          <h3 class="font-body text-3xl font-bold text-primary">50%</h3>
-        </div>
-        <div class="mt-2 h-3 w-full rounded-full bg-lila">
-          <div class="h-3 rounded-full bg-primary" style="width: 50%"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container py-16 md:py-20" id="services">
-  <h2
-    class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
-  >
-    Here's what I'm good at
-  </h2>
-  <h3
-    class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
-  >
-    These are the services Ioffer
-  </h3>
-
-  <div
-    class="grid grid-cols-1 gap-6 pt-10 sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3"
-  >
-    <div class="group rounded px-8 py-12 shadow hover:bg-primary">
-      <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-        <div class="hidden group-hover:block">
-          <img
-            src="/assets/img/icon-development-white.svg"
-            alt="development icon"
-          />
-        </div>
-        <div class="block group-hover:hidden">
-          <img
-            src="/assets/img/icon-development-black.svg"
-            alt="development icon"
-          />
-        </div>
-      </div>
-      <div class="text-center">
-        <h3
-          class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
-        >
-          WEB DEVELOPMENT
-        </h3>
-        <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        </p>
-      </div>
-    </div>
-   
-    <div class="group rounded px-8 py-12 shadow hover:bg-primary">
-      <div class="mx-auto h-24 w-24 text-center xl:h-28 xl:w-28">
-        <div class="hidden group-hover:block">
-          <img
-            src="/assets/img/icon-mobile-white.svg"
-            alt="Mobile Application icon"
-          />
-        </div>
-        <div class="block group-hover:hidden">
-          <img
-            src="/assets/img/icon-mobile-black.svg"
-            alt="Mobile Application icon"
-          />
-        </div>
-      </div>
-      <div class="text-center">
-        <h3
-          class="pt-8 text-lg font-semibold uppercase text-primary group-hover:text-yellow lg:text-xl"
-        >
-          Mobile Development
-        </h3>
-        <p class="text-grey pt-4 text-sm group-hover:text-white md:text-base">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        </p>
-      </div>
-    </div>
-   
-  
-  </div>
-</div>
-
-<div class="container py-16 md:py-20" id="portfolio">
-  <h2
-    class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
-  >
-    Check out my Portfolio
-  </h2>
-  <h3
-    class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
-  >
-    Here's what I have done with the past
-  </h3>
-
-  <div
-    class="mx-auto grid w-full grid-cols-1 gap-8 pt-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2"
-  >
-    <a
-      href="/"
-      class="mx-auto transform transition-all hover:scale-105 md:mx-0"
-    >
-      <img
-        src="/assets/img/portfolio-apple.jpeg"
-        class="w-full shadow"
-        alt="portfolio image"
-      />
-    </a>
-    <a
-      href="/"
-      class="mx-auto transform transition-all hover:scale-105 md:mx-0"
-    >
-      <img
-        src="/assets/img/portfolio-stripe.jpeg"
-        class="w-full shadow"
-        alt="portfolio image"
-      />
-    </a>
-    <a
-      href="/"
-      class="mx-auto transform transition-all hover:scale-105 md:mx-0"
-    >
-      <img
-        src="/assets/img/portfolio-fedex.jpeg"
-        class="w-full shadow"
-        alt="portfolio image"
-      />
-    </a>
-    <a
-      href="/"
-      class="mx-auto transform transition-all hover:scale-105 md:mx-0"
-    >
-      <img
-        src="/assets/img/portfolio-microsoft.jpeg"
-        class="w-full shadow"
-        alt="portfolio image"
-      />
-    </a>
-  </div>
-</div>
-
-<div class="bg-grey-50" id="clients">
-  <div class="container py-16 md:py-20">
-    <div class="mx-auto w-full sm:w-3/4 lg:w-full">
-      <h2
-        class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
-      >
-        My latest clients
-      </h2>
-      <div class="flex flex-wrap items-center justify-center pt-4 sm:pt-4">
-        <span class="m-8 block">
-          <img
-            src="/assets/img/logo-coca-cola.svg"
-            alt="client logo"
-            class="mx-auto block h-12 w-auto"
-          />
-        </span>
-        <span class="m-8 block">
-          <img
-            src="/assets/img/logo-apple.svg"
-            alt="client logo"
-            class="mx-auto block h-12 w-auto"
-          />
-        </span>
-
-        <span class="m-8 block">
-          <img
-            src="/assets/img/logo-netflix.svg"
-            alt="client logo"
-            class="mx-auto block h-12 w-auto"
-          />
-        </span>
-
-        <span class="m-8 block">
-          <img
-            src="/assets/img/logo-amazon.svg"
-            alt="client logo"
-            class="mx-auto block h-12 w-auto"
-          />
-        </span>
-
-        <span class="m-8 block">
-          <img
-            src="/assets/img/logo-stripe.svg"
-            alt="client logo"
-            class="mx-auto block h-12 w-auto"
-          />
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container py-16 md:py-20" id="work">
-  <h2
-    class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
-  >
-    My work experience
-  </h2>
-  <h3
-    class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
-  >
-    Here's what I did before freelancing
-  </h3>
-
-  <div class="relative mx-auto mt-12 flex w-full flex-col lg:w-2/3">
-    <span
-      class="left-2/5 absolute inset-y-0 ml-10 hidden w-0.5 bg-grey-40 md:block"
-    ></span>
-
-    <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
-      <div class="md:w-2/5">
-        <div class="flex justify-center md:justify-start">
-          <span class="shrink-0">
-            <img
-              src="/assets/img/logo-spotify.svg"
-              class="h-auto w-32"
-              alt="company logo"
-            />
-          </span>
-          <div class="relative ml-3 hidden w-full md:block">
-            <span
-              class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"
-            ></span>
-          </div>
-        </div>
-      </div>
-      <div class="md:w-3/5">
-        <div class="relative flex md:pl-18">
-          <span
-            class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"
-          ></span>
-
-          <div class="mt-1 flex">
-            <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
-            <div class="md:-mt-1 md:pl-8">
-              <span class="block font-body font-bold text-grey-40"
-                >Apr 2015 - Mar 2018</span
-              >
-              <span
-                class="block pt-2 font-header text-xl font-bold uppercase text-primary"
-                >Frontend Developer</span
-              >
-              <div class="pt-2">
-                <span class="block font-body text-black"
-                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac
-                  venenatis enim.</span
-                >
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
-      <div class="md:w-2/5">
-        <div class="flex justify-center md:justify-start">
-          <span class="shrink-0">
-            <img
-              src="/assets/img/logo-microsoft.svg"
-              class="h-auto w-32"
-              alt="company logo"
-            />
-          </span>
-          <div class="relative ml-3 hidden w-full md:block">
-            <span
-              class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"
-            ></span>
-          </div>
-        </div>
-      </div>
-      <div class="md:w-3/5">
-        <div class="relative flex md:pl-18">
-          <span
-            class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"
-          ></span>
 
-          <div class="mt-1 flex">
-            <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
-            <div class="md:-mt-1 md:pl-8">
-              <span class="block font-body font-bold text-grey-40"
-                >Mar 2018 - September 2019</span
-              >
-              <span
-                class="block pt-2 font-header text-xl font-bold uppercase text-primary"
-                >Software Engineer</span
-              >
-              <div class="pt-2">
-                <span class="block font-body text-black"
-                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac
-                  venenatis enim.</span
-                >
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="mt-8 flex flex-col text-center md:flex-row md:text-left">
-      <div class="md:w-2/5">
-        <div class="flex justify-center md:justify-start">
-          <span class="shrink-0">
-            <img
-              src="/assets/img/logo-fedex.svg"
-              class="h-auto w-32"
-              alt="company logo"
-            />
-          </span>
-          <div class="relative ml-3 hidden w-full md:block">
-            <span
-              class="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 transform bg-grey-70"
-            ></span>
-          </div>
-        </div>
-      </div>
-      <div class="md:w-3/5">
-        <div class="relative flex md:pl-18">
-          <span
-            class="absolute left-8 top-1 hidden h-4 w-4 rounded-full border-2 border-grey-40 bg-white md:block"
-          ></span>
 
-          <div class="mt-1 flex">
-            <i class="bx bxs-right-arrow hidden text-primary md:block"></i>
-            <div class="md:-mt-1 md:pl-8">
-              <span class="block font-body font-bold text-grey-40"
-                >October 2019 - Feb 2021</span
-              >
-              <span
-                class="block pt-2 font-header text-xl font-bold uppercase text-primary"
-                >DevOps Engineer</span
-              >
-              <div class="pt-2">
-                <span class="block font-body text-black"
-                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Vestibulum mattis felis vitae risus pulvinar tincidunt. Nam ac
-                  venenatis enim.</span
-                >
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-<div
-  class="bg-cover bg-top bg-no-repeat pb-16 md:py-16 lg:py-24"
-  style="background-image: url(/assets/img/experience-figure.png)"
-  id="statistics"
->
-  <div class="container">
-    <div
-      class="mx-auto w-5/6 bg-white py-16 shadow md:w-11/12 lg:py-20 xl:py-24 2xl:w-full"
-    >
-      <div class="grid grid-cols-2 gap-5 md:gap-8 xl:grid-cols-4 xl:gap-5">
-        <div
-          class="flex flex-col items-center justify-center text-center md:flex-row md:text-left"
-        >
-          <div>
-            <img
-              src="/assets/img/icon-project.svg"
-              class="mx-auto h-12 w-auto md:h-20"
-              alt="icon project"
-            />
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="pt-5 md:pl-5 md:pt-0">
-            <h1 class="font-body text-2xl font-bold text-primary md:text-4xl">
-              12
-            </h1>
-            <h4
-              class="text-grey-dark font-header text-base font-medium leading-loose md:text-xl"
-            >
-              Finished Projects
-            </h4>
-          </div>
-        </div>
 
-        <div
-          class="flex flex-col items-center justify-center text-center md:flex-row md:text-left"
-        >
-          <div>
-            <img
-              src="/assets/img/icon-award.svg"
-              class="mx-auto h-12 w-auto md:h-20"
-              alt="icon award"
-            />
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="pt-5 md:pl-5 md:pt-0">
-            <h1 class="font-body text-2xl font-bold text-primary md:text-4xl">
-              3
-            </h1>
-            <h4
-              class="text-grey-dark font-header text-base font-medium leading-loose md:text-xl"
-            >
-              Awards Won
-            </h4>
-          </div>
-        </div>
 
-        <div
-          class="mt-6 flex flex-col items-center justify-center text-center md:mt-10 md:flex-row md:text-left lg:mt-0"
-        >
-          <div>
-            <img
-              src="/assets/img/icon-happy.svg"
-              class="mx-auto h-12 w-auto md:h-20"
-              alt="icon happy clients"
-            />
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="pt-5 md:pl-5 md:pt-0">
-            <h1 class="font-body text-2xl font-bold text-primary md:text-4xl">
-              8
-            </h1>
-            <h4
-              class="text-grey-dark font-header text-base font-medium leading-loose md:text-xl"
-            >
-              Happy Clients
-            </h4>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div
-          class="mt-6 flex flex-col items-center justify-center text-center md:mt-10 md:flex-row md:text-left lg:mt-0"
-        >
-          <div>
-            <img
-              src="/assets/img/icon-puzzle.svg"
-              class="mx-auto h-12 w-auto md:h-20"
-              alt="icon puzzle"
-            />
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="pt-5 md:pl-5 md:pt-0">
-            <h1 class="font-body text-2xl font-bold text-primary md:text-4xl">
-              99
-            </h1>
-            <h4
-              class="text-grey-dark font-header text-base font-medium leading-loose md:text-xl"
-            >
-              Bugs Fixed
-            </h4>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-<!-- <div class="bg-grey-50" id="blog">
-  <div class="container py-16 md:py-20">
-    <h2
-      class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
-    >
-      I also like to write
-    </h2>
-    <h4
-      class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
-    >
-      Check out my latest posts!
-    </h4>
-    <div
-      class="mx-auto grid w-full grid-cols-1 gap-6 pt-12 sm:w-3/4 lg:w-full lg:grid-cols-3 xl:gap-10"
-    >
-      <a href="/post" class="shadow">
-        <div
-          style="background-image: url(/assets/img/post-01.png)"
-          class="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
-        >
-          <span
-            class="absolute inset-0 block bg-gradient-to-b from-blog-gradient-from to-blog-gradient-to bg-cover bg-center bg-no-repeat opacity-10 transition-opacity group-hover:opacity-50"
-          ></span>
-          <span
-            class="absolute right-0 bottom-0 mr-4 mb-4 block rounded-full border-2 border-white px-6 py-2 text-center font-body text-sm font-bold uppercase text-white md:text-base"
-            >Read More</span
-          >
         </div>
-        <div class="bg-white py-6 px-5 xl:py-8">
-          <span class="block font-body text-lg font-semibold text-black"
-            >How to become a frontend developer</span
-          >
-          <span class="block pt-2 font-body text-grey-20"
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
-          >
-        </div>
-      </a>
-      <a href="/post" class="shadow">
-        <div
-          style="background-image: url(/assets/img/post-02.png)"
-          class="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
-        >
-          <span
-            class="absolute inset-0 block bg-gradient-to-b from-blog-gradient-from to-blog-gradient-to bg-cover bg-center bg-no-repeat opacity-10 transition-opacity group-hover:opacity-50"
-          ></span>
-          <span
-            class="absolute right-0 bottom-0 mr-4 mb-4 block rounded-full border-2 border-white px-6 py-2 text-center font-body text-sm font-bold uppercase text-white md:text-base"
-            >Read More</span
-          >
-        </div>
-        <div class="bg-white py-6 px-5 xl:py-8">
-          <span class="block font-body text-lg font-semibold text-black"
-            >My personal productivity system</span
-          >
-          <span class="block pt-2 font-body text-grey-20"
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
-          >
-        </div>
-      </a>
-      <a href="/post" class="shadow">
-        <div
-          style="background-image: url(/assets/img/post-03.png)"
-          class="group relative h-72 bg-cover bg-center bg-no-repeat sm:h-84 lg:h-64 xl:h-72"
-        >
-          <span
-            class="absolute inset-0 block bg-gradient-to-b from-blog-gradient-from to-blog-gradient-to bg-cover bg-center bg-no-repeat opacity-10 transition-opacity group-hover:opacity-50"
-          ></span>
-          <span
-            class="absolute right-0 bottom-0 mr-4 mb-4 block rounded-full border-2 border-white px-6 py-2 text-center font-body text-sm font-bold uppercase text-white md:text-base"
-            >Read More</span
-          >
-        </div>
-        <div class="bg-white py-6 px-5 xl:py-8">
-          <span class="block font-body text-lg font-semibold text-black"
-            >My year in review 2020</span
-          >
-          <span class="block pt-2 font-body text-grey-20"
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.</span
-          >
-        </div>
-      </a>
-    </div>
-  </div>
-</div> -->
-
-<div class="container py-16 md:py-20" id="contact">
-  <h2
-    class="text-center font-header text-4xl font-semibold uppercase text-primary sm:text-5xl lg:text-6xl"
-  >
-    Here's a contact form
-  </h2>
-  <h4
-    class="pt-6 text-center font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl"
-  >
-    Have Any Questions?
-  </h4>
-
-  <form class="mx-auto w-full pt-10 sm:w-3/4">
-    <div class="flex flex-col md:flex-row">
-      <input
-        class="mr-3 w-full rounded border-grey-50 px-4 py-3 font-body text-black md:w-1/2 lg:mr-5"
-        placeholder="Name"
-        type="text"
-        id="name"
-      />
-      <input
-        class="mt-6 w-full rounded border-grey-50 px-4 py-3 font-body text-black md:mt-0 md:ml-3 md:w-1/2 lg:ml-5"
-        placeholder="Email"
-        type="text"
-        id="email"
-      />
-    </div>
-    <textarea
-      class="mt-6 w-full rounded border-grey-50 px-4 py-3 font-body text-black md:mt-8"
-      placeholder="Message"
-      id="message"
-      cols="30"
-      rows="10"
-    ></textarea>
-    <button
-      class="mt-6 flex items-center justify-center rounded bg-primary px-8 py-3 font-header text-lg font-bold uppercase text-white hover:bg-grey-20"
-    >
-      Send
-      <i class="bx bx-chevron-right relative -right-2 text-3xl"></i>
-    </button>
-  </form>
-  <div class="flex flex-col pt-16 lg:flex-row">
-    <div
-      class="w-full border-l-2 border-t-2 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3"
-    >
-      <div class="flex items-center justify-center">
-        <i class="bx bx-phone text-2xl text-grey-40"></i>
-        <p class="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg">
-          My Phone
-        </p>
-      </div>
-      <div class="pt-2  flex items-center  justify-between flex-col font-body font-bold text-primary lg:text-lg">
-      <div class="flex items-center  justify-between">
-        <p class="mr-10px">(+212) 615919437  </p>  
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-          <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-        </svg>
-      </div>
-      <div class="flex items-center  justify-between">
-        <p class="mr-10px">(+212) 630258502  </p>  
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-          <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-        </svg>
-      </div>
-      
 
       </div>
-    </div>
-    <div
-      class="w-full border-l-2 border-t-0 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3 lg:border-l-0 lg:border-t-2"
-    >
-      <div class="flex items-center justify-center">
-        <i class="bx bx-envelope text-2xl text-grey-40"></i>
-        <p class="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg">
-          My Email
-        </p>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bi bi-briefcase"></i></div>
+            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-card-checklist"></i></div>
+            <h4 class="title"><a href="">Dolor Sitema</a></h4>
+            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-bar-chart"></i></div>
+            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bi bi-binoculars"></i></div>
+            <h4 class="title"><a href="">Magni Dolores</a></h4>
+            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="bi bi-brightness-high"></i></div>
+            <h4 class="title"><a href="">Nemo Enim</a></h4>
+            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+          </div>
+        </div>
+
       </div>
-      <p class="pt-2 text-center font-body font-bold text-primary lg:text-lg">
-        abdelaazizeelhathoute.2018@gmail.com
-      </p>
-    </div>
-    <div
-      class="w-full border-l-2 border-t-0 border-r-2 border-b-2 border-grey-60 px-6 py-6 sm:py-8 lg:w-1/3 lg:border-l-0 lg:border-t-2"
-    >
-      <div class="flex items-center justify-center">
-        <i class="bx bx-map text-2xl text-grey-40"></i>
-        <p class="pl-2 font-body font-bold uppercase text-grey-40 lg:text-lg">
-          My Address
-        </p>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
       </div>
-      <p class="pt-2 text-center font-body font-bold text-primary lg:text-lg">
-        Youssoufia
-      </p>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@example.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+1 5589 55488 55s</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>iPortfolio</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
     </div>
-  </div>
-</div>
+  </footer><!-- End  Footer -->
 
-<div
-  class="container flex items-center justify-center mb-30px"
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
->
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3374.3945661053936!2d-8.523837385013687!3d32.24746458113515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdaefdd4fcbbdbc1%3A0x846cbd9f328a7bdb!2sYOUCODE!5e0!3m2!1sfr!2sma!4v1678638830472!5m2!1sfr!2sma" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
 
-<div
-  class="relative bg-primary bg-cover bg-center bg-no-repeat py-16 bg-blend-multiply lg:py-24"
-  style="background-image: url(/assets/img/bg-cta.jpg)"
->
-  <div class="container relative z-30">
-    <h3
-      class="text-center font-header text-3xl uppercase leading-tight tracking-wide text-white sm:text-4xl lg:text-5xl"
-    >
-      Keep <span class="font-bold">up-to-date</span> <br />
-      with what I'm up to
-    </h3>
-    <form class="mt-6 flex flex-col justify-center sm:flex-row">
-      <input
-        class="w-full rounded px-4 py-3 font-body text-black sm:w-2/5 sm:py-4 lg:w-1/3"
-        type="text"
-        id="email"
-        placeholder="Give me your Email"
-      />
-      <button
-        class="mt-2 rounded bg-yellow px-8 py-3 font-body text-base font-bold uppercase text-primary transition-colors hover:bg-primary hover:text-white focus:border-transparent focus:outline-none focus:ring focus:ring-yellow sm:ml-2 sm:mt-0 sm:py-4 md:text-lg"
-      >
-        Join the club
-      </button>
-    </form>
-  </div>
-</div>
-</div>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
-      <div class="bg-primary">
-  <div class="container flex flex-col justify-between py-6 sm:flex-row">
-    <p class="text-center font-body text-white md:text-left">
-      © Copyright 2023. All right reserved, Youcode.
-    </p>
-    <div class="flex items-center justify-center pt-5 sm:justify-start sm:pt-0">
-      <a href="https://www.facebook.com/abdelaazize.elhathoute/">
-        <i
-          class="bx bxl-facebook-square text-2xl text-white hover:text-yellow"
-        ></i>
-      </a>
-      <a href="/" class="pl-4">
-        <i class="bx bxl-twitter text-2xl text-white hover:text-yellow"></i>
-      </a>
-      <a href="/" class="pl-4">
-        <i class="bx bxl-dribbble text-2xl text-white hover:text-yellow"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/elhathout-abdelaziz-191290208/" class="pl-4">
-        <i class="bx bxl-linkedin text-2xl text-white hover:text-yellow"></i>
-      </a>
-      <a href="https://www.instagram.com/elhathout_abdelaziz98/
-      " class="pl-4">
-        <i class="bx bxl-instagram text-2xl text-white hover:text-yellow"></i>
-      </a>
-    </div>
-  </div>
-</div>
+</body>
 
-    </div>
-
-    <script src="/assets/js/main.js"></script>
-
-    
-  </body>
 </html>
